@@ -1,1 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SRS REALTY | Luxury Real Estate Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0a0a;
+color:#fff;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:#d4af37;
+}
+
+nav a{
+margin-left:25px;
+color:#ddd;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+height:95vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+
+background-size:cover;
+background-position:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:54px;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:650px;
+color:#ccc;
+}
+
+.btn{
+margin-top:25px;
+padding:14px 38px;
+background:#d4af37;
+border:none;
+color:black;
+font-weight:600;
+cursor:pointer;
+border-radius:5px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+padding:90px 8%;
+}
+
+.section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:10px;
+transition:.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#d4af37;
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+/* PROPERTIES */
+
+.properties{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.property{
+background:#111;
+border-radius:10px;
+overflow:hidden;
+transition:.3s;
+}
+
+.property img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.property:hover{
+transform:scale(1.04);
+}
+
+.property h4{
+padding:15px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact form{
+max-width:500px;
+margin:auto;
+margin-top:30px;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#111;
+border:1px solid #333;
+color:white;
+}
+
+.map{
+margin-top:40px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+text-align:center;
+padding:40px;
+color:#777;
+margin-top:60px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+padding:16px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">SRS REALTY</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#properties">Properties</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Luxury Real Estate Solutions</h1>
+
+<p>
+Buy, sell, rent and invest in premium residential and commercial properties with SRS Realty.
+</p>
+
+<button class="btn">Explore Properties</button>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Buying & Selling Flats</h3>
+<p>Professional support for buying or selling residential flats.</p>
+</div>
+
+<div class="card">
+<h3>Residential & Commercial Properties</h3>
+<p>Expert property solutions for homes and business spaces.</p>
+</div>
+
+<div class="card">
+<h3>Rental & Lease Services</h3>
+<p>Helping tenants and landlords connect efficiently.</p>
+</div>
+
+<div class="card">
+<h3>Land & Plot Deals</h3>
+<p>Secure investment opportunities in land and plots.</p>
+</div>
+
+<div class="card">
+<h3>Property Investment Consulting</h3>
+<p>Strategic guidance for high-return real estate investments.</p>
+</div>
+
+<div class="card">
+<h3>Redevelopment Projects</h3>
+<p>Professional assistance for redevelopment opportunities.</p>
+</div>
+
+<div class="card">
+<h3>Documentation & Legal Guidance</h3>
+<p>End-to-end documentation and legal support.</p>
+</div>
+
+<div class="card">
+<h3>Property Valuation</h3>
+<p>Accurate market-based valuation services.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="properties">
+
+<h2>Featured Properties</h2>
+
+<div class="properties">
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+<h4>Luxury Apartment</h4>
+</div>
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c">
+<h4>Modern Villa</h4>
+</div>
+
+<div class="property">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<h4>Commercial Office</h4>
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Contact SRS Realty</h2>
+
+<p><b>Founder:</b> Sadit Sagvekar</p>
+<p><b>Co-Founder:</b> Sachin Sagvekar</p>
+
+<p><b>Phone:</b> +91 9167727888 | +91 8108780111</p>
+
+<p><b>Email:</b> srsrealty07@gmail.com</p>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button class="btn">Send Inquiry</button>
+
+</form>
+
+<div class="map">
+
+<iframe
+width="100%"
+height="300"
+src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 SRS REALTY | Luxury Property Consultants</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919167727888">💬</a>
+
+</body>
+
+</html>
